@@ -1,0 +1,157 @@
+% This is a very cool resume template created by Kim Lindfors. 
+% Feel free to use it and modify it as you wish. If you do, consider giving me credit by linking to my website https://kimlindfors.se or GitHub profile https://github.com/klindfors.
+
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+\usepackage[a4paper,margin=0.5cm, top=0.8cm, bottom=0.3cm]{geometry}
+% Adjust document margins here if needed. Great if you want to adjust how full the document looks on the page.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{microtype}
+
+% Document settings
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{
+    leftmargin=2.75em, % The list will be a bit indented to promote readability
+    itemsep=0.5pt,
+    topsep=0pt, 
+    parsep=0pt,
+    partopsep=0pt
+}
+
+% Section formatting
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{-9pt}\rule{\textwidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{1pt}{1.5pt}
+
+% Entries for experience and education. Takes four arguments: title, date, organization, description text.
+\newcommand{\entry}[4]{
+    \textbf{#1}\hfill\textbf{#2}\\[0pt]
+    \textit{#3}\\[-0.5pt]
+    #4
+    \vspace{4.5pt}
+}
+
+% Entries for projects. Takes five arguments: project name, technologies used, date, links, description text.   
+\newcommand{\project}[5]{
+    \textbf{#1}: \textit{#2}
+    \hfill
+    \textit{#3}
+    \quad
+    #4\\[-1pt]
+    #5 \vspace{3pt}
+}
+
+\begin{document}
+
+% Document header
+\begin{center}
+    {\LARGE\bfseries Name McNameson}\\[4pt]
+    \href{mailto:name.mcname@mail.com}{name.mcname@mail.com}
+    \quad | \quad
+    +46700000000
+    \quad | \quad
+    \href{https://www.linkedin.com/in/yourlinkedin}{linkedin.com/in/wowcool}
+    \quad | \quad
+    \href{https://yourcoolwebsite.se}{anicewebsite.se}
+    \quad | \quad
+    \href{https://github.com}{github.com/checkthisout}
+\end{center}
+\vspace{-9pt}
+
+% summary
+\section{Summary}
+
+Junior Software Developer experienced in cool technologies and cool jobs. Strong foundation in \textbf{cool programming languages, also one more language,} and maybe even more languages and frameworks. Experienced in communicating technical concepts and leading teams. Background in other cool profession.
+
+% Skills section
+\section{Technical Skills}
+\textbf{Languages:} Java, Kotlin, Python, JavaScript, C/C++, SQL\\
+\textbf{Frameworks \& Platforms:} Jetpack Compose, React, Node.js\\
+\textbf{IoT \& hardware:} Arduino, ESP32 \\
+\textbf{APIs \& development:} JUnit, Maven, CI/CD, REST APIs, OAuth, GitHub Actions\\ 
+\textbf{Tools:} Git, Docker, IntelliJ, Android Studio, Visual Studio Code, Figma, Jira
+
+% projects
+\section{Projects}
+\project
+{Hundregistret}
+{Java, JUnit}
+{In development}
+{\href{https://github.com/}{GitHub}}
+{Java program for keeping track of dogs and their owners. Developed as a university project, with a focus on object-oriented programming and unit testing.}
+
+\project
+{Personal website}
+{JavaScript, REST APIs, GitHub Actions, GitHub Pages}
+{}
+{\href{linktothesite.link}{Demo} \quad \href{https://github.com}{GitHub}}
+{Web project visualising activity using API and anotherAPI, with automated JSON synchronisation and deployment.}
+
+\project
+{Language project}
+{Lox, Java}
+{University project}
+{\href{https://github.com}{GitHub}}
+{Adaptation of a programming language for simulating comething useful and relevant from real life. Implemented in Java, with a custom interpreter and compiler.}
+
+% experience
+\section{Experience}
+
+\entry{Programming Educator}{Sep 2026 -- Present}
+{Relevant Coding School}{Teaching programming at the School in City.
+\begin{itemize}
+    \item I teach a language to students, focusing on programming concepts and problem solving.
+\end{itemize}
+}
+\entry{Tutor: Important Uni Course}{Nov 2024 -- Present}
+{Important University Course}{
+    Working as a tutor for a university course.
+    \begin{itemize}
+    \item Support students in developing skills to independently solve programming problems.
+    \item \textbf{Language X, Framework Y, OOP}. Debugging, code structure, conceptual understanding and project work.
+    \end{itemize}
+}
+\entry{Teacher's Assistant: A very important course}{Mar 2025 -- Jun 2026}
+{University of [City]}{Supervised 9000+ students during laboratory work and individual projects in many specific frameworks.
+\begin{itemize}
+    \item Web: HTML, CSS, JavaScript.
+    \item Mobile: \textbf{Kotlin/Jetpack Compose} for Android, Swift/SwiftUI for iOS.
+    \item IoT development: \textbf{C/C++}, cool microcontroller 1, hardware 2.
+    \item Troubleshot software, hardware and integration issues.
+\end{itemize}
+}
+\entry{Team Lead}{Mar 2024 -- Jun 2026}
+{A nice organisation}{Led a team of 1000 people at a place.
+\begin{itemize}
+    \item Developed course materials in cool languages.
+    \item Planned, structured and evaluated stuff.
+\end{itemize}
+}
+
+% Education
+\section{Education}
+\entry{BSc in Subject}{Aug 2023 -- Present}
+{University, The Institution of Learning Things}{BSc in Subject, with a focus on good things to have learned. Relevant courses include: Course 1, Course 2, Course 3.
+\begin{itemize}
+    \item \textbf{Exchange semester at Other University in City}:\newline 
+    Course Highlight 1, Highlight 2, Highlight 3.
+\end{itemize}
+}
+\entry{Another Course That is Relevant still}{Feb 2023 -- May 2023}
+{Other School}{
+Vocational education in a relevant topic.
+}
+
+\end{document}
