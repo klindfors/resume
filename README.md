@@ -20,7 +20,7 @@ Add a screenshot or preview of your resume here.
 
 For example:
 
-![Resume preview](resume.pdf)
+![Resume preview](resume_template.pdf)
 
 ## Getting Started
 
