@@ -19,7 +19,7 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \setlist[itemize]{
-    leftmargin=2.75em, % The list will be a bit indented to promote readability
+    leftmargin=2.75em, % The lists (used in entries) will be a bit indented to promote readability. Adjust if needed.
     itemsep=0.5pt,
     topsep=0pt, 
     parsep=0pt,
@@ -43,7 +43,7 @@
     \vspace{4.5pt}
 }
 
-% Entries for projects. Takes five arguments: project name, technologies used, date, links, description text.   
+% Entries for projects. Takes five arguments: project name, technologies used, project status/demo link, GitHub link, description text.   
 \newcommand{\project}[5]{
     \textbf{#1}: \textit{#2}
     \hfill
@@ -55,9 +55,9 @@
 
 \begin{document}
 
-% Document header
+% Document header and personal details
 \begin{center}
-    {\LARGE\bfseries Name McNameson}\\[4pt]
+    {\LARGE\bfseries Name McNameson}\\[4pt] % Change this spacing to adjust space betwwen name and details
     \href{mailto:name.mcname@mail.com}{name.mcname@mail.com}
     \quad | \quad
     +46700000000
@@ -70,12 +70,11 @@
 \end{center}
 \vspace{-9pt}
 
-% summary
+% Summary 
 \section{Summary}
-
 Junior Software Developer experienced in cool technologies and cool jobs. Strong foundation in \textbf{cool programming languages, also one more language,} and maybe even more languages and frameworks. Experienced in communicating technical concepts and leading teams. Background in other cool profession.
 
-% Skills section
+% Skills section: Adjust categories where necessary.
 \section{Technical Skills}
 \textbf{Languages:} Java, Kotlin, Python, JavaScript, C/C++, SQL\\
 \textbf{Frameworks \& Platforms:} Jetpack Compose, React, Node.js\\
@@ -106,7 +105,7 @@ Junior Software Developer experienced in cool technologies and cool jobs. Strong
 {\href{https://github.com}{GitHub}}
 {Adaptation of a programming language for simulating comething useful and relevant from real life. Implemented in Java, with a custom interpreter and compiler.}
 
-% experience
+% Experience section
 \section{Experience}
 
 \entry{Programming Educator}{Sep 2026 -- Present}
