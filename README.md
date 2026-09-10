@@ -1,36 +1,27 @@
 # LaTeX Resume Template
 
-A compact and ATS-optimized LaTeX resume template, primarily designed for technical resumes.
-
-The template is built for a one-page A4 layout with reusable commands for entries in experience, education and projects. It is designed to make it easy to fit information into a single page while keeping the text readable.
+This resume template is built for a one-page A4 layout with reusable commands for entries in experience, education and projects. It is designed to make it easy to fit information into a single page while keeping the document readable and easy on the human eye.
 
 ## Features
-- One-page layout
-- A4 format
-- Compact spacing, designed to maximize available space
-- ATS-optimized PDF output
+- One-page layout in A4 format
 - Reusable commands for entries in experience, education and projects
-- Minimal dependencies
-- Works with Overleaf and local LaTeX installations
+- ATS-optimized PDF output, while keeping a minimalistic and human-friendly reading experience
+- Maximizes available document space, while allowing for flexibility in margin and entry-paddings
+- Works with Overleaf and locally in your preferred text editor
 - Suitable for technical, software, design and academic resumes
 
 ## Preview
 
-Add a screenshot or preview of your resume here.
-
-For example:
-
 ![Resume preview](resume_template.pdf)
 
-## Getting Started
+## Try it out yourself
 
 ### Requirements
 
 You can compile the template using any standard LaTeX distribution, for instance:
 
-- [MiKTeX](https://miktex.org/)
-- [TeX Live](https://www.tug.org/texlive/)
-- [Overleaf](https://www.overleaf.com/)
+- [Overleaf](https://www.overleaf.com/) online editor
+- [MiKTeX](https://miktex.org/) with your preferred text editor
 
 The template uses standard LaTeX packages available through these distributions.
 
@@ -42,9 +33,11 @@ The template uses standard LaTeX packages available through these distributions.
 4. Compile the document.
 
 ### Local installation
+Ensure that you have a LaTeX distribution installed, for instance MiKTeX.
 
-Clone the repository:
+Clone the repository and open in your preferred text editor:
 
 ```bash
 git clone https://github.com/klindfors/resume.git
-cd resume
+
+
